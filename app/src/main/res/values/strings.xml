@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Advanced Tic-tac-toe</string>
+    <string name="button_2_players">2 Players</string>
+    <string name="button_local_multiplayer">Local Multiplayer</string>
 </resources>
