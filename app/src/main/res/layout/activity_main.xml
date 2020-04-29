@@ -12,10 +12,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/localMultiplayer"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@drawable/my_button_bg"
+        android:onClick="showTwoPlayersActivity"
         android:text="@string/button_local_multiplayer"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,14 +24,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/twoPlayers"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/my_button_bg"
         android:text="@string/button_2_players"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/localMultiplayer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
