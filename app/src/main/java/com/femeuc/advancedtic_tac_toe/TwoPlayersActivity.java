@@ -11,6 +11,7 @@ import android.widget.Button;
 
 public class TwoPlayersActivity extends AppCompatActivity {
     private int turnValue = 0;
+    private boolean[] isSquareMarked = new boolean[180];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class TwoPlayersActivity extends AppCompatActivity {
             }
         }
         turnValue++;
+        v.setClickable(false);
     }
 
     public int getTurnValue() {
@@ -45,5 +47,4 @@ public class TwoPlayersActivity extends AppCompatActivity {
     public void setTurnValue(int v) {
         turnValue = v;
     }
-
 }
