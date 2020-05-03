@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
 
 public class TwoPlayersActivity extends AppCompatActivity {
     private int turnValue = 0;
@@ -22,29 +23,27 @@ public class TwoPlayersActivity extends AppCompatActivity {
     }
 
     public void markSquare(View v) {
-        final int sdk = android.os.Build.VERSION.SDK_INT;
-        if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-            if(turnValue % 2 != 0) {
-                v.setBackgroundDrawable(getResources().getDrawable(R.drawable.cross_sign));
+        String id = v.getResources().getResourceEntryName(v.getId());
+        int index = Integer.parseInt(id.toLowerCase().replace("btn", ""));
+        if(!isSquareMarked[index-1]) {
+            final int sdk = android.os.Build.VERSION.SDK_INT;
+            if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                if(turnValue % 2 != 0) {
+                    v.setBackgroundDrawable(getResources().getDrawable(R.drawable.cross_sign));
+                } else {
+                    v.setBackgroundDrawable(getResources().getDrawable(R.drawable.circle_sign));
+                }
             } else {
-                v.setBackgroundDrawable(getResources().getDrawable(R.drawable.circle_sign));
+                if(turnValue % 2 != 0) {
+                    v.setBackground(getResources().getDrawable(R.drawable.cross_sign));
+                } else {
+                    v.setBackground(getResources().getDrawable(R.drawable.circle_sign));
+                }
             }
-        } else {
-            if(turnValue % 2 != 0) {
-                v.setBackground(getResources().getDrawable(R.drawable.cross_sign));
-            } else {
-                v.setBackground(getResources().getDrawable(R.drawable.circle_sign));
-            }
+            turnValue++;
+            v.setClickable(false);
+            isSquareMarked[index - 1] = true;
         }
-        turnValue++;
-        v.setClickable(false);
     }
 
-    public int getTurnValue() {
-        return turnValue;
-    }
-
-    public void setTurnValue(int v) {
-        turnValue = v;
-    }
 }
