@@ -5,4 +5,6 @@
 
     <string name="jogador">Jogador</string>
     <string name="quit">Quit</string>
+
+    <string name="winner_alert">The winner is</string>
 </resources>
