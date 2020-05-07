@@ -1,14 +1,21 @@
 package com.femeuc.advancedtic_tac_toe;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentManager;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class TwoPlayersActivity extends AppCompatActivity {
     private Alliance alliance = Alliance.CROSS;
@@ -163,6 +170,22 @@ public class TwoPlayersActivity extends AppCompatActivity {
                 }
             }
         }
+        final AlertDialog.Builder mBuilder = new AlertDialog.Builder(TwoPlayersActivity.this);
+        View view = getLayoutInflater().inflate(R.layout.winner_alert_dialog, null);
+        TextView tv = view.findViewById(R.id.winnerAlert);
+        tv.setText(getString(R.string.winner_alert) + " " + winner.toString());
+        Button okBtn = view.findViewById(R.id.okButton);
+        mBuilder.setView(view);
+        final AlertDialog dialog = mBuilder.create();
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     }
 
 }
