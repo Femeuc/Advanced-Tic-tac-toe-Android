@@ -1681,10 +1681,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/quit"
             android:background="@drawable/button_background"
-            android:textSize="16sp"
-            />
+            android:onClick="undo"
+            android:text="@string/undo"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

@@ -17,11 +17,15 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class TwoPlayersActivity extends AppCompatActivity {
     private Alliance alliance = Alliance.CROSS;
     private Alliance winner = null;
 
     private Board board = new Board();
+
+    ArrayList<View> lastMarkedSquares = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,18 @@ public class TwoPlayersActivity extends AppCompatActivity {
             stopGame();
         }
         setAlliance(alliance.getOppositeAlliance());
+        lastMarkedSquares.add(v);
+    }
+
+    public void undo(View v) {
+        if(lastMarkedSquares.size() > 0) {
+            View square = lastMarkedSquares.get(lastMarkedSquares.size() - 1);
+            undoMarkSquare(square);
+            square.setClickable(true);
+            unsetSquareAlliance(square);
+            setAlliance(alliance.getOppositeAlliance());
+            lastMarkedSquares.remove(lastMarkedSquares.size() - 1);
+        }
     }
 
     private void markSquare(View v) {
@@ -186,6 +202,21 @@ public class TwoPlayersActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    }
+
+    private void undoMarkSquare(View v) {
+        final int sdk = android.os.Build.VERSION.SDK_INT;
+        if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            v.setBackgroundDrawable(getResources().getDrawable(R.drawable.border));
+        } else {
+            v.setBackground(getResources().getDrawable(R.drawable.border));
+        }
+    }
+
+    private void unsetSquareAlliance(View v) {
+        String id = v.getResources().getResourceEntryName(v.getId());
+        int index = Integer.parseInt(id.toLowerCase().replace("btn", ""));
+        board.gameBoard[index - 1].setAlliance(null);
     }
 
 }
