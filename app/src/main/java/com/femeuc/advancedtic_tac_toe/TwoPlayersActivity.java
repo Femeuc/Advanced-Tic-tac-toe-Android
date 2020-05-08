@@ -3,19 +3,15 @@ package com.femeuc.advancedtic_tac_toe;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentManager;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -31,7 +27,7 @@ public class TwoPlayersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two_players);
-
+        highlightCurrentPlayer();
     }
 
     public void updateGame(View v) {
@@ -44,6 +40,8 @@ public class TwoPlayersActivity extends AppCompatActivity {
         }
         setAlliance(alliance.getOppositeAlliance());
         lastMarkedSquares.add(v);
+        highlightCurrentPlayer();
+        highlightLastMove();
     }
 
     public void undo(View v) {
@@ -54,6 +52,8 @@ public class TwoPlayersActivity extends AppCompatActivity {
             unsetSquareAlliance(square);
             setAlliance(alliance.getOppositeAlliance());
             lastMarkedSquares.remove(lastMarkedSquares.size() - 1);
+            highlightCurrentPlayer();
+            highlightLastMove();
         }
     }
 
@@ -219,4 +219,57 @@ public class TwoPlayersActivity extends AppCompatActivity {
         board.gameBoard[index - 1].setAlliance(null);
     }
 
+
+    private void highlightCurrentPlayer() {
+        final int sdk = android.os.Build.VERSION.SDK_INT;
+        if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            if(alliance.isCross()) {
+                findViewById(R.id.crossPlayer).setBackgroundDrawable(getResources().getDrawable(R.drawable.active_player));
+                findViewById(R.id.circlePlayer).setBackgroundDrawable(getResources().getDrawable(R.drawable.border));
+            } else {
+                findViewById(R.id.circlePlayer).setBackgroundDrawable(getResources().getDrawable(R.drawable.active_player));
+                findViewById(R.id.crossPlayer).setBackgroundDrawable(getResources().getDrawable(R.drawable.border));
+            }
+        } else {
+            if(alliance.isCross()) {
+                findViewById(R.id.crossPlayer).setBackground(getResources().getDrawable(R.drawable.active_player));
+                findViewById(R.id.circlePlayer).setBackground(getResources().getDrawable(R.drawable.border));
+            } else {
+                findViewById(R.id.circlePlayer).setBackground(getResources().getDrawable(R.drawable.active_player));
+                findViewById(R.id.crossPlayer).setBackground(getResources().getDrawable(R.drawable.border));
+            }
+        }
+    }
+
+    private void highlightLastMove() {
+        if(lastMarkedSquares.size() == 0)
+            return;
+        View v = lastMarkedSquares.get(lastMarkedSquares.size() - 1);
+        final int sdk = android.os.Build.VERSION.SDK_INT;
+        if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            if(alliance.getOppositeAlliance().isCross()) {
+                v.setBackgroundDrawable(getResources().getDrawable(R.drawable.highlighted_last_move_cross));
+                if(lastMarkedSquares.size() >= 2) {
+                    lastMarkedSquares.get(lastMarkedSquares.size() - 2).setBackgroundDrawable(getResources().getDrawable(R.drawable.circle_sign));
+                }
+            } else {
+                v.setBackgroundDrawable(getResources().getDrawable(R.drawable.highlighted_last_move_circle));
+                if(lastMarkedSquares.size() >= 2) {
+                    lastMarkedSquares.get(lastMarkedSquares.size() - 2).setBackgroundDrawable(getResources().getDrawable(R.drawable.cross_sign));
+                }
+            }
+        } else {
+            if(alliance.getOppositeAlliance().isCross()) {
+                v.setBackground(getResources().getDrawable(R.drawable.highlighted_last_move_cross));
+                if(lastMarkedSquares.size() >= 2) {
+                    lastMarkedSquares.get(lastMarkedSquares.size() - 2).setBackground(getResources().getDrawable(R.drawable.circle_sign));
+                }
+            } else {
+                v.setBackground(getResources().getDrawable(R.drawable.highlighted_last_move_circle));
+                if(lastMarkedSquares.size() >= 2) {
+                    lastMarkedSquares.get(lastMarkedSquares.size() - 2).setBackground(getResources().getDrawable(R.drawable.cross_sign));
+                }
+            }
+        }
+    }
 }

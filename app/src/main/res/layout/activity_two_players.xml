@@ -1653,28 +1653,28 @@
         app:layout_constraintTop_toBottomOf="@+id/row15">
 
         <TextView
+            android:id="@+id/crossPlayer"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
             android:drawableBottom="@drawable/cross"
+            android:gravity="center"
             android:padding="8dp"
             android:text="@string/jogador"
-            android:gravity="center"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/circlePlayer"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
             android:drawableBottom="@drawable/circle"
+            android:gravity="center"
             android:padding="8dp"
             android:text="@string/jogador"
-            android:gravity="center"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/quit"
