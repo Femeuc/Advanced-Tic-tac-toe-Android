@@ -5,6 +5,7 @@
 
     <string name="jogador">Jogador</string>
     <string name="undo">Undo</string>
+    <string name="new_game">New Game</string>
 
     <string name="winner_alert">The winner is</string>
 </resources>
