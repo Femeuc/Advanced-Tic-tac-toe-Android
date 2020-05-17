@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void teste(View view) {
-        Intent intent = new Intent(this, MultiplayerWifi.class);
+    public void openBluetoothMultiplayerActivity(View view) {
+        Intent intent = new Intent(this, BluetoothMultiplayer.class);
         startActivity(intent);
     }
 }
