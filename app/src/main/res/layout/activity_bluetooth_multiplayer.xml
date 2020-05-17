@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BluetoothMultiplayer">
+
+    <TextView
+        android:id="@+id/bluetoothMultiplayerInstructionsTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Instructions"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bluetoothMultiplayerInstructionsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="left"
+        android:text="1. Make sure both devices are already paired. \n2. One of the devices must click on HOST MATCH.\n3. Then the other device must click on LIST PAIRED DEVICES and choose the one that clicked to host the match."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluetoothMultiplayerInstructionsTitleTextView" />
+
+    <Button
+        android:id="@+id/hostMatchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host Match"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/listPairedDevicesButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluetoothMultiplayerInstructionsTextView" />
+
+    <Button
+        android:id="@+id/listPairedDevicesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Paired Devices"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hostMatchButton"
+        app:layout_constraintTop_toBottomOf="@+id/bluetoothMultiplayerInstructionsTextView" />
+
+    <ListView
+        android:id="@+id/pairedDevicesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostMatchButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rootView"
+    android:id="@+id/bluetoothMultiplayerBoardRootView"
     >
 
     <LinearLayout
@@ -1653,7 +1653,7 @@
         app:layout_constraintTop_toBottomOf="@+id/row15">
 
         <TextView
-            android:id="@+id/crossPlayer"
+            android:id="@+id/crossTextView"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1665,7 +1665,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/circlePlayer"
+            android:id="@+id/circleTextView"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -1677,13 +1677,13 @@
             android:textSize="16sp" />
 
         <Button
-            android:id="@+id/undo"
+            android:id="@+id/confirmButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/button_background"
-            android:onClick="undo"
-            android:text="@string/undo"
+            android:onClick="confirmMove"
+            android:text="Confirmar"
             android:textSize="16sp" />
 
     </LinearLayout>

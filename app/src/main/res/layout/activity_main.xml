@@ -12,12 +12,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/localMultiplayer"
+        android:id="@+id/bluetoothMultiplayer"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@drawable/my_button_bg"
-        android:onClick="teste"
-        android:text="@string/button_local_multiplayer"
+        android:onClick="openBluetoothMultiplayerActivity"
+        android:text="@string/button_bluetooth_multiplayer"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
         android:text="@string/button_2_players"
         android:textSize="16sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/localMultiplayer"
+        app:layout_constraintBottom_toTopOf="@+id/bluetoothMultiplayer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
