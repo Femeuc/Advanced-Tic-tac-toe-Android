@@ -2,26 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.femeuc.advancedtic_tac_toe">
 
-<!--    <uses-permission-->
-<!--        android:name="android.permission.ACCESS_FINE_LOCATION"-->
-<!--        android:required="true" />-->
-<!--    <uses-permission-->
-<!--        android:name="android.permission.ACCESS_WIFI_STATE"-->
-<!--        android:required="true" />-->
-<!--    <uses-permission-->
-<!--        android:name="android.permission.CHANGE_WIFI_STATE"-->
-<!--        android:required="true" />-->
-<!--    <uses-permission-->
-<!--        android:name="android.permission.INTERNET"-->
-<!--        android:required="true" />-->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-feature android:name="android.hardware.wifi.direct" android:required="true" />
-
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--
+ If your app targets Android 9 or lower, you can declare
+         ACCESS_COARSE_LOCATION instead.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -29,7 +16,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MultiplayerWifi"></activity>
+        <activity android:name=".Teste10"></activity>
+        <activity android:name=".BluetoothMultiplayerBoard"
+            android:screenOrientation="nosensor"
+            />
+        <activity android:name=".BluetoothMultiplayer"
+            android:screenOrientation="nosensor"
+            />
         <activity
             android:name=".TwoPlayersActivity"
             android:screenOrientation="nosensor" />
