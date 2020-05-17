@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn2"
@@ -32,7 +32,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn3"
@@ -40,7 +40,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn4"
@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn5"
@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn6"
@@ -64,7 +64,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn7"
@@ -72,7 +72,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn8"
@@ -80,7 +80,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn9"
@@ -88,7 +88,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn10"
@@ -96,7 +96,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn11"
@@ -104,7 +104,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn12"
@@ -112,7 +112,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -133,7 +133,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn14"
@@ -141,7 +141,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn15"
@@ -149,7 +149,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn16"
@@ -157,7 +157,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn17"
@@ -165,7 +165,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn18"
@@ -173,7 +173,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn19"
@@ -181,7 +181,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn20"
@@ -189,7 +189,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn21"
@@ -197,7 +197,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn22"
@@ -205,7 +205,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn23"
@@ -213,14 +213,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
         <Button
             android:id="@+id/btn24"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare"
+            android:onClick="updateGame"
             />
 
     </LinearLayout>
@@ -242,7 +242,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn26"
@@ -250,7 +250,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn27"
@@ -258,7 +258,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn28"
@@ -266,7 +266,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn29"
@@ -274,7 +274,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn30"
@@ -282,7 +282,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn31"
@@ -290,7 +290,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn32"
@@ -298,7 +298,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn33"
@@ -306,7 +306,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn34"
@@ -314,7 +314,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn35"
@@ -322,7 +322,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn36"
@@ -330,7 +330,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -351,7 +351,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn38"
@@ -359,7 +359,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn39"
@@ -367,7 +367,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn40"
@@ -375,7 +375,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn41"
@@ -383,7 +383,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn42"
@@ -391,7 +391,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn43"
@@ -399,7 +399,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn44"
@@ -407,7 +407,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn45"
@@ -415,7 +415,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn46"
@@ -423,7 +423,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn47"
@@ -431,7 +431,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn48"
@@ -439,7 +439,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -460,7 +460,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn50"
@@ -468,7 +468,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn51"
@@ -476,7 +476,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn52"
@@ -484,7 +484,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn53"
@@ -492,7 +492,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn54"
@@ -500,7 +500,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn55"
@@ -508,7 +508,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn56"
@@ -516,7 +516,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn57"
@@ -524,7 +524,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn58"
@@ -532,7 +532,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn59"
@@ -540,7 +540,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn60"
@@ -548,7 +548,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -569,7 +569,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn62"
@@ -577,7 +577,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn63"
@@ -585,7 +585,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn64"
@@ -593,7 +593,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn65"
@@ -601,7 +601,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn66"
@@ -609,7 +609,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn67"
@@ -617,7 +617,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn68"
@@ -625,7 +625,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn69"
@@ -633,7 +633,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn70"
@@ -641,7 +641,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn71"
@@ -649,7 +649,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn72"
@@ -657,7 +657,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -678,7 +678,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn74"
@@ -686,7 +686,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn75"
@@ -694,7 +694,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn76"
@@ -702,7 +702,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn77"
@@ -710,7 +710,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn78"
@@ -718,7 +718,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn79"
@@ -726,7 +726,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn80"
@@ -734,7 +734,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn81"
@@ -742,7 +742,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn82"
@@ -750,7 +750,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn83"
@@ -758,7 +758,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn84"
@@ -766,7 +766,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -787,7 +787,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn86"
@@ -795,7 +795,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn87"
@@ -803,7 +803,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn88"
@@ -811,7 +811,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn89"
@@ -819,7 +819,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn90"
@@ -827,7 +827,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn91"
@@ -835,7 +835,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn92"
@@ -843,7 +843,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn93"
@@ -851,7 +851,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn94"
@@ -859,7 +859,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn95"
@@ -867,7 +867,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn96"
@@ -875,7 +875,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -896,7 +896,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn98"
@@ -904,7 +904,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn99"
@@ -912,7 +912,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn100"
@@ -920,7 +920,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn101"
@@ -928,7 +928,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn102"
@@ -936,7 +936,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn103"
@@ -944,7 +944,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn104"
@@ -952,7 +952,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn105"
@@ -960,7 +960,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn106"
@@ -968,7 +968,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn107"
@@ -976,7 +976,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn108"
@@ -984,7 +984,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -1005,7 +1005,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn110"
@@ -1013,7 +1013,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn111"
@@ -1021,7 +1021,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn112"
@@ -1029,7 +1029,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn113"
@@ -1037,7 +1037,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn114"
@@ -1045,7 +1045,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn115"
@@ -1053,7 +1053,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn116"
@@ -1061,7 +1061,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn117"
@@ -1069,7 +1069,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn118"
@@ -1077,7 +1077,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn119"
@@ -1085,14 +1085,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
         <Button
             android:id="@+id/btn120"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare"
+            android:onClick="updateGame"
             />
 
     </LinearLayout>
@@ -1114,7 +1114,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn122"
@@ -1122,7 +1122,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn123"
@@ -1130,7 +1130,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn124"
@@ -1138,7 +1138,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn125"
@@ -1146,7 +1146,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn126"
@@ -1154,7 +1154,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn127"
@@ -1162,7 +1162,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn128"
@@ -1170,7 +1170,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn129"
@@ -1178,7 +1178,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn130"
@@ -1186,7 +1186,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn131"
@@ -1194,7 +1194,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn132"
@@ -1202,7 +1202,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -1223,7 +1223,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn134"
@@ -1231,7 +1231,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn135"
@@ -1239,7 +1239,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn136"
@@ -1247,7 +1247,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn137"
@@ -1255,7 +1255,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn138"
@@ -1263,7 +1263,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn139"
@@ -1271,7 +1271,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn140"
@@ -1279,7 +1279,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn141"
@@ -1287,7 +1287,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn142"
@@ -1295,7 +1295,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn143"
@@ -1303,7 +1303,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn144"
@@ -1311,7 +1311,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -1332,7 +1332,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn146"
@@ -1340,7 +1340,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn147"
@@ -1348,7 +1348,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn148"
@@ -1356,7 +1356,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn149"
@@ -1364,7 +1364,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn150"
@@ -1372,7 +1372,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn151"
@@ -1380,7 +1380,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn152"
@@ -1388,7 +1388,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn153"
@@ -1396,7 +1396,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn154"
@@ -1404,7 +1404,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn155"
@@ -1412,14 +1412,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
         <Button
             android:id="@+id/btn156"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare"
+            android:onClick="updateGame"
             />
 
     </LinearLayout>
@@ -1441,7 +1441,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn158"
@@ -1449,7 +1449,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn159"
@@ -1457,7 +1457,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn160"
@@ -1465,7 +1465,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn161"
@@ -1473,7 +1473,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn162"
@@ -1481,7 +1481,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn163"
@@ -1489,7 +1489,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn164"
@@ -1497,7 +1497,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn165"
@@ -1505,7 +1505,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn166"
@@ -1513,7 +1513,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn167"
@@ -1521,7 +1521,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn168"
@@ -1529,7 +1529,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
@@ -1549,7 +1549,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn170"
@@ -1557,7 +1557,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn171"
@@ -1565,7 +1565,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn172"
@@ -1573,7 +1573,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn173"
@@ -1581,7 +1581,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn174"
@@ -1589,7 +1589,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn175"
@@ -1597,7 +1597,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn176"
@@ -1605,7 +1605,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn177"
@@ -1613,7 +1613,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn178"
@@ -1621,7 +1621,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn179"
@@ -1629,7 +1629,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
         <Button
             android:id="@+id/btn180"
@@ -1637,7 +1637,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/back"
-            android:onClick="chooseSquare" />
+            android:onClick="updateGame" />
 
     </LinearLayout>
 
