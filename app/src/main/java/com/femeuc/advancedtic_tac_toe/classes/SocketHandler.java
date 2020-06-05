@@ -1,4 +1,4 @@
-package com.femeuc.advancedtic_tac_toe;
+package com.femeuc.advancedtic_tac_toe.classes;
 
 import android.bluetooth.BluetoothSocket;
 

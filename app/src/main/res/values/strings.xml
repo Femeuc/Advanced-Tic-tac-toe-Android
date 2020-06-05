@@ -3,9 +3,16 @@
     <string name="button_2_players">2 Players</string>
     <string name="button_bluetooth_multiplayer">Bluetooth Multiplayer</string>
 
-    <string name="jogador">Jogador</string>
     <string name="undo">Undo</string>
     <string name="new_game">New Game</string>
+    <string name="player">Player</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="ok_button">Ok</string>
+
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_text">1. Make sure both devices are already paired. \n2. One of the devices must click on HOST MATCH.\n3. Then the other device must click on LIST PAIRED DEVICES and choose the one that clicked to host the match.</string>
+    <string name="host_match_button">Host Match</string>
+    <string name="list_paired_devices_button">Paired Devices</string>
 
     <string name="winner_alert">The winner is</string>
 </resources>

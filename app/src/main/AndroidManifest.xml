@@ -17,14 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Teste10"></activity>
-        <activity android:name=".BluetoothMultiplayerBoard"
+        <activity android:name=".activities.BluetoothMultiplayerBoard"
             android:screenOrientation="nosensor"
             />
-        <activity android:name=".BluetoothMultiplayer"
+        <activity android:name=".activities.BluetoothMultiplayer"
             android:screenOrientation="nosensor"
             />
         <activity
-            android:name=".TwoPlayersActivity"
+            android:name=".activities.TwoPlayersActivity"
             android:screenOrientation="nosensor" />
         <activity
             android:name=".MainActivity"

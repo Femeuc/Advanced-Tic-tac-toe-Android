@@ -1661,7 +1661,7 @@
             android:drawableBottom="@drawable/cross"
             android:gravity="center"
             android:padding="8dp"
-            android:text="@string/jogador"
+            android:text="@string/player"
             android:textSize="16sp" />
 
         <TextView
@@ -1673,7 +1673,7 @@
             android:drawableBottom="@drawable/circle"
             android:gravity="center"
             android:padding="8dp"
-            android:text="@string/jogador"
+            android:text="@string/player"
             android:textSize="16sp" />
 
         <Button

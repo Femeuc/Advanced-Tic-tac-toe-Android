@@ -1,10 +1,9 @@
-package com.femeuc.advancedtic_tac_toe;
+package com.femeuc.advancedtic_tac_toe.activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -13,6 +12,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.femeuc.advancedtic_tac_toe.R;
+import com.femeuc.advancedtic_tac_toe.classes.Alliance;
+import com.femeuc.advancedtic_tac_toe.classes.Board;
 
 import java.util.ArrayList;
 

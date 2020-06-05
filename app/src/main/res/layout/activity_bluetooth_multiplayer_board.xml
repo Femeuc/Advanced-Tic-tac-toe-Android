@@ -1661,7 +1661,7 @@
             android:drawableBottom="@drawable/cross"
             android:gravity="center"
             android:padding="8dp"
-            android:text="@string/jogador"
+            android:text="@string/player"
             android:textSize="16sp" />
 
         <TextView
@@ -1673,7 +1673,7 @@
             android:drawableBottom="@drawable/circle"
             android:gravity="center"
             android:padding="8dp"
-            android:text="@string/jogador"
+            android:text="@string/player"
             android:textSize="16sp" />
 
         <Button
@@ -1683,7 +1683,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:onClick="confirmMove"
-            android:text="Confirmar"
+            android:text="@string/confirm_button"
             android:textSize="16sp" />
 
     </LinearLayout>

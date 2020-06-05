@@ -1,4 +1,4 @@
-package com.femeuc.advancedtic_tac_toe;
+package com.femeuc.advancedtic_tac_toe.classes;
 
 public class Board {
     public final static int AMOUNT_OF_SQUARES = calculateAmountOfSquares();
@@ -9,74 +9,74 @@ public class Board {
 
     public Square[] gameBoard;
 
-    public static final boolean[] FIRST_COLUMN = initCol(0);
-    public static final boolean[] SECOND_COLUNN = initCol(1);
-    public static final boolean[] THIRD_COLUMN = initCol(2);
-    public static final boolean[] FOURTH_COLUMN = initCol(3);
-    public static final boolean[] FIFTH_COLUMN = initCol(4);
-    public static final boolean[] SIXTH_COLUMN = initCol(5);
-    public static final boolean[] SEVENTH_COLUMN = initCol(6);
-    public static final boolean[] EIGHTH_COLUMN = initCol(7);
-    public static final boolean[] NINTH_COLUMN = initCol(8);
-    public static final boolean[] TENTH_COLUMN = initCol(9);
-    public static final boolean[] ELEVENTH_COLUMN = initCol(10);
-    public static final boolean[] TWELFTH_COLUMN = initCol(11);
+    private static final boolean[] FIRST_COLUMN = initCol(0);
+    private static final boolean[] SECOND_COLUNN = initCol(1);
+    private static final boolean[] THIRD_COLUMN = initCol(2);
+    private static final boolean[] FOURTH_COLUMN = initCol(3);
+    private static final boolean[] FIFTH_COLUMN = initCol(4);
+    private static final boolean[] SIXTH_COLUMN = initCol(5);
+    private static final boolean[] SEVENTH_COLUMN = initCol(6);
+    private static final boolean[] EIGHTH_COLUMN = initCol(7);
+    private static final boolean[] NINTH_COLUMN = initCol(8);
+    private static final boolean[] TENTH_COLUMN = initCol(9);
+    private static final boolean[] ELEVENTH_COLUMN = initCol(10);
+    private static final boolean[] TWELFTH_COLUMN = initCol(11);
 
-    public static final boolean[] FIRST_ROW = initRow(0);
-    public static final boolean[] SECOND_ROW = initRow(12);
-    public static final boolean[] THIRD_ROW = initRow(24);
-    public static final boolean[] FOURTH_ROW = initRow(36);
-    public static final boolean[] FIFTH_ROW = initRow(48);
-    public static final boolean[] SIXTH_ROW = initRow(60);
-    public static final boolean[] SEVENTH_ROW = initRow(72);
-    public static final boolean[] EIGHTH_ROW = initRow(84);
-    public static final boolean[] NINTH_ROW = initRow(96);
-    public static final boolean[] TENTH_ROW = initRow(108);
-    public static final boolean[] ELEVENTH_ROW = initRow(120);
-    public static final boolean[] TWELFTH_ROW = initRow(132);
-    public static final boolean[] THIRTEENTH_ROW = initRow(144);
-    public static final boolean[] FOURTEENTH_ROW = initRow(156);
-    public static final boolean[] FIFTEENTH_ROW = initRow(168);
+    private static final boolean[] FIRST_ROW = initRow(0);
+    private static final boolean[] SECOND_ROW = initRow(12);
+    private static final boolean[] THIRD_ROW = initRow(24);
+    private static final boolean[] FOURTH_ROW = initRow(36);
+    private static final boolean[] FIFTH_ROW = initRow(48);
+    private static final boolean[] SIXTH_ROW = initRow(60);
+    private static final boolean[] SEVENTH_ROW = initRow(72);
+    private static final boolean[] EIGHTH_ROW = initRow(84);
+    private static final boolean[] NINTH_ROW = initRow(96);
+    private static final boolean[] TENTH_ROW = initRow(108);
+    private static final boolean[] ELEVENTH_ROW = initRow(120);
+    private static final boolean[] TWELFTH_ROW = initRow(132);
+    private static final boolean[] THIRTEENTH_ROW = initRow(144);
+    private static final boolean[] FOURTEENTH_ROW = initRow(156);
+    private static final boolean[] FIFTEENTH_ROW = initRow(168);
 
-    public static final boolean[] FIRST_ASCENDING_DIAGONAL = initAscendingDiagonal(48);
-    public static final boolean[] SECOND_ASCENDING_DIAGONAL = initAscendingDiagonal(60);
-    public static final boolean[] THIRD_ASCENDING_DIAGONAL = initAscendingDiagonal(72);
-    public static final boolean[] FOURTH_ASCENDING_DIAGONAL = initAscendingDiagonal(84);
-    public static final boolean[] FIFTH_ASCENDING_DIAGONAL = initAscendingDiagonal(96);
-    public static final boolean[] SIXTH_ASCENDING_DIAGONAL = initAscendingDiagonal(108);
-    public static final boolean[] SEVENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(120);
-    public static final boolean[] EIGHTH_ASCENDING_DIAGONAL = initAscendingDiagonal(132);
-    public static final boolean[] NINTH_ASCENDING_DIAGONAL = initAscendingDiagonal(144);
-    public static final boolean[] TENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(156);
-    public static final boolean[] ELEVENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(168);
-    public static final boolean[] TWELFTH_ASCENDING_DIAGONAL = initAscendingDiagonal(169);
-    public static final boolean[] THIRTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(170);
-    public static final boolean[] FOURTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(171);
-    public static final boolean[] FIFTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(172);
-    public static final boolean[] SIXTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(173);
-    public static final boolean[] SEVENTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(174);
-    public static final boolean[] EIGHTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(175);
+    private static final boolean[] FIRST_ASCENDING_DIAGONAL = initAscendingDiagonal(48);
+    private static final boolean[] SECOND_ASCENDING_DIAGONAL = initAscendingDiagonal(60);
+    private static final boolean[] THIRD_ASCENDING_DIAGONAL = initAscendingDiagonal(72);
+    private static final boolean[] FOURTH_ASCENDING_DIAGONAL = initAscendingDiagonal(84);
+    private static final boolean[] FIFTH_ASCENDING_DIAGONAL = initAscendingDiagonal(96);
+    private static final boolean[] SIXTH_ASCENDING_DIAGONAL = initAscendingDiagonal(108);
+    private static final boolean[] SEVENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(120);
+    private static final boolean[] EIGHTH_ASCENDING_DIAGONAL = initAscendingDiagonal(132);
+    private static final boolean[] NINTH_ASCENDING_DIAGONAL = initAscendingDiagonal(144);
+    private static final boolean[] TENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(156);
+    private static final boolean[] ELEVENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(168);
+    private static final boolean[] TWELFTH_ASCENDING_DIAGONAL = initAscendingDiagonal(169);
+    private static final boolean[] THIRTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(170);
+    private static final boolean[] FOURTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(171);
+    private static final boolean[] FIFTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(172);
+    private static final boolean[] SIXTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(173);
+    private static final boolean[] SEVENTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(174);
+    private static final boolean[] EIGHTEENTH_ASCENDING_DIAGONAL = initAscendingDiagonal(175);
 
-    public static final boolean[] FIRST_DESCENDING_DIAGONAL = initDescendingDiagonal(120);
-    public static final boolean[] SECOND_DESCENDING_DIAGONAL = initDescendingDiagonal(108);
-    public static final boolean[] THIRD_DESCENDING_DIAGONAL = initDescendingDiagonal(96);
-    public static final boolean[] FOURTH_DESCENDING_DIAGONAL = initDescendingDiagonal(84);
-    public static final boolean[] FIFTH_DESCENDING_DIAGONAL = initDescendingDiagonal(72);
-    public static final boolean[] SIXTH_DESCENDING_DIAGONAL = initDescendingDiagonal(60);
-    public static final boolean[] SEVENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(48);
-    public static final boolean[] EIGHTH_DESCENDING_DIAGONAL = initDescendingDiagonal(36);
-    public static final boolean[] NINTH_DESCENDING_DIAGONAL = initDescendingDiagonal(24);
-    public static final boolean[] TENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(12);
-    public static final boolean[] ELEVENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(0);
-    public static final boolean[] TWELFTH_DESCENDING_DIAGONAL = initDescendingDiagonal(1);
-    public static final boolean[] THIRTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(2);
-    public static final boolean[] FOURTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(3);
-    public static final boolean[] FIFTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(4);
-    public static final boolean[] SIXTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(5);
-    public static final boolean[] SEVENTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(6);
-    public static final boolean[] EIGHTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(7);
+    private static final boolean[] FIRST_DESCENDING_DIAGONAL = initDescendingDiagonal(120);
+    private static final boolean[] SECOND_DESCENDING_DIAGONAL = initDescendingDiagonal(108);
+    private static final boolean[] THIRD_DESCENDING_DIAGONAL = initDescendingDiagonal(96);
+    private static final boolean[] FOURTH_DESCENDING_DIAGONAL = initDescendingDiagonal(84);
+    private static final boolean[] FIFTH_DESCENDING_DIAGONAL = initDescendingDiagonal(72);
+    private static final boolean[] SIXTH_DESCENDING_DIAGONAL = initDescendingDiagonal(60);
+    private static final boolean[] SEVENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(48);
+    private static final boolean[] EIGHTH_DESCENDING_DIAGONAL = initDescendingDiagonal(36);
+    private static final boolean[] NINTH_DESCENDING_DIAGONAL = initDescendingDiagonal(24);
+    private static final boolean[] TENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(12);
+    private static final boolean[] ELEVENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(0);
+    private static final boolean[] TWELFTH_DESCENDING_DIAGONAL = initDescendingDiagonal(1);
+    private static final boolean[] THIRTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(2);
+    private static final boolean[] FOURTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(3);
+    private static final boolean[] FIFTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(4);
+    private static final boolean[] SIXTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(5);
+    private static final boolean[] SEVENTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(6);
+    private static final boolean[] EIGHTEENTH_DESCENDING_DIAGONAL = initDescendingDiagonal(7);
 
-    Board() {
+    public Board() {
         this.gameBoard = initBoard();
     }
 
@@ -88,7 +88,7 @@ public class Board {
         return squares;
     }
 
-    public static int calculateAmountOfSquares() {
+    private static int calculateAmountOfSquares() {
         return AMOUNT_OF_ROWS * AMOUNT_OF_COLUMNS;
     }
 

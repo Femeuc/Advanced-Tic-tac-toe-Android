@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.femeuc.advancedtic_tac_toe.activities.BluetoothMultiplayer;
+import com.femeuc.advancedtic_tac_toe.activities.TwoPlayersActivity;
+
 public class MainActivity extends AppCompatActivity {
-    public static final String TYPE_OF_MATCH = "com.femeuc.advancedtic_tac_toe.TYPE_OF_MATCH";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void showTwoPlayersActivity(View view) {
         Intent intent = new Intent(this, TwoPlayersActivity.class);
-        int type_of_match = 1;
-        intent.putExtra(TYPE_OF_MATCH, type_of_match);
         startActivity(intent);
     }
 

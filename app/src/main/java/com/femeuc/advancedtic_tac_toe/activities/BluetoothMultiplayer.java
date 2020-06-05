@@ -1,4 +1,4 @@
-package com.femeuc.advancedtic_tac_toe;
+package com.femeuc.advancedtic_tac_toe.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,8 +15,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.femeuc.advancedtic_tac_toe.R;
+import com.femeuc.advancedtic_tac_toe.classes.SocketHandler;
+
 import java.io.IOException;
-import java.net.ServerSocket;
 import java.util.Set;
 import java.util.UUID;
 
@@ -91,26 +93,16 @@ public class BluetoothMultiplayer extends AppCompatActivity {
             }
         }
 
-        // Closes the connect socket and causes the thread to finish.
-        public void cancel() {
-            try {
-                mmServerSocket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
 
     private class ConnectThread extends Thread {
         private final BluetoothSocket mmSocket;
-        private final BluetoothDevice mmDevice;
 
         public ConnectThread(BluetoothDevice device) {
             // Use a temporary object that is later assigned to mmSocket
             // because mmSocket is final.
             BluetoothSocket tmp = null;
-            mmDevice = device;
 
             try {
                 // Get a BluetoothSocket to connect with the given BluetoothDevice.
@@ -148,14 +140,6 @@ public class BluetoothMultiplayer extends AppCompatActivity {
             startActivity(intent);
         }
 
-        // Closes the client socket and causes the thread to finish.
-        public void cancel() {
-            try {
-                mmSocket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
 
@@ -226,6 +210,5 @@ public class BluetoothMultiplayer extends AppCompatActivity {
         listPairedDevicesButton = findViewById(R.id.listPairedDevicesButton);
         pairedDevicesListView = findViewById(R.id.pairedDevicesListView);
     }
-
 
 }

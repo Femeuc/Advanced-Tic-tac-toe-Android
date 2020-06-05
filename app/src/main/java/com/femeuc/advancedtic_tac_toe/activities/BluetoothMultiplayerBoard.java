@@ -1,4 +1,4 @@
-package com.femeuc.advancedtic_tac_toe;
+package com.femeuc.advancedtic_tac_toe.activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.femeuc.advancedtic_tac_toe.R;
+import com.femeuc.advancedtic_tac_toe.classes.SocketHandler;
+import com.femeuc.advancedtic_tac_toe.classes.Alliance;
+import com.femeuc.advancedtic_tac_toe.classes.Board;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,7 +46,6 @@ public class BluetoothMultiplayerBoard extends AppCompatActivity {
 
     public static final int MESSAGE_RECEIVED = 1;
     private boolean IS_DEVICE_HOST;
-    private boolean IS_PLAYER_READY_TO_NEW_GAME = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +64,16 @@ public class BluetoothMultiplayerBoard extends AppCompatActivity {
         connectedThread.start();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        connectedThread.cancel();
+    }
+
     private class ConnectedThread extends Thread {
         private final BluetoothSocket mmSocket;
         private final InputStream mmInStream;
         private final OutputStream mmOutStream;
-        private byte[] mmBuffer; // mmBuffer store for the stream
 
         public ConnectedThread(BluetoothSocket socket) {
             mmSocket = socket;
@@ -89,7 +98,8 @@ public class BluetoothMultiplayerBoard extends AppCompatActivity {
         }
 
         public void run() {
-            mmBuffer = new byte[1024];
+            // mmBuffer store for the stream
+            byte[] mmBuffer = new byte[1024];
             int numBytes; // bytes returned from read()
 
             // Keep listening to the InputStream until an exception occurs.
@@ -133,22 +143,20 @@ public class BluetoothMultiplayerBoard extends AppCompatActivity {
     Handler handler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
-            switch (msg.what) {
-                case MESSAGE_RECEIVED:
-                    byte[] readBuff = (byte[]) msg.obj;
-                    final String opponentMessage = new String(readBuff, 0, msg.arg1);
-                    if(!opponentMessage.equals(Alliance.CROSS.toString())
-                            && !opponentMessage.equals(Alliance.CIRCLE.toString())
-                            && !opponentMessage.equals("ready")) {
-                        getOpponentMove(opponentMessage);
-                    } else if(opponentMessage.equals("ready")) {
-                        teste = true;
-                        opponentBeginsNewGame();
-                    } else {
-                        winner = thisDeviceAlliance.getOppositeAlliance();
-                        stopGame();
-                    }
-                    break;
+            if (msg.what == MESSAGE_RECEIVED) {
+                byte[] readBuff = (byte[]) msg.obj;
+                final String opponentMessage = new String(readBuff, 0, msg.arg1);
+                if (!opponentMessage.equals(Alliance.CROSS.toString())
+                        && !opponentMessage.equals(Alliance.CIRCLE.toString())
+                        && !opponentMessage.equals("ready")) {
+                    getOpponentMove(opponentMessage);
+                } else if (opponentMessage.equals("ready")) {
+                    teste = true;
+                    opponentBeginsNewGame();
+                } else {
+                    winner = thisDeviceAlliance.getOppositeAlliance();
+                    stopGame();
+                }
             }
             return true;
         }
@@ -408,8 +416,8 @@ public class BluetoothMultiplayerBoard extends AppCompatActivity {
     }
 
     private void changeNewGameButtonToConfirmButton() {
-        Button btn = (Button) findViewById(R.id.confirmButton);
-        btn.setText("Confirm");
+        Button btn = findViewById(R.id.confirmButton);
+        btn.setText(R.string.confirm_button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
